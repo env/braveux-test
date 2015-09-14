@@ -41,10 +41,19 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1.4em;}
+    padding: 0.8em;
+}
+.menu a {
+    color: white;
+    text-decoration: none;
+}
 
 .menu .menu__nav ul{
     display: none;
+}
+
+.menu .menu__title i {
+    text-align: right;
 }
 
 .menu--active {
@@ -56,13 +65,13 @@ body {
         -moz-box-shadow: -1px 1px 1px #444;
         -webkit-box-shadow: -1px 1px 1px #444;
         box-shadow: -1px 1px 1px #444;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444')";
-        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444');
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444')";
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444');
 
 }
 
 .menu.menu--active .menu__nav ul {
-    display: block
+    display: block;
 }
 
 .menu__nav ul {
@@ -71,8 +80,6 @@ body {
 }
 
 .menu__nav ul li a {
-    color: white;
-    text-decoration: none;
     padding: 1em 0;
     display: block;
 }
@@ -80,19 +87,20 @@ body {
 /* Sign Up Form */
 
 .sign-up-form {
-    padding: 3em;
+    padding: 2em;
 }
 
 .sign-up-form input {
     width: 100%;
-    padding: 10px;
+    padding: .6em;
+    margin: 0 0 .3em;
 }
 
 .sign-up-form__actions button {
     background-color: #64308e;
     color: white;
-    border-radius: 2px;
-    padding: .8em;;
+    border-radius: 4px;
+    padding: .8em;
     border: 0;
 }
 
@@ -101,10 +109,15 @@ body {
     float: left;
 }
 
+.sign-up-form__actions a {
+    text-decoration: none;
+    color: #afbdc5; /* darkest */
+}
+
 /* Colophon */
 
 .colophon {
     position: absolute;
-    left: 5px;
+    left: 2em;
     bottom: 30px;
 }
