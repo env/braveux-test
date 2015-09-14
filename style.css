@@ -8,18 +8,18 @@
 // dark   #afbdc5
 // med    #e0e5e8
 // light  #eceff1
+// lighter #ebeef0
 
 */
 
-
 body {
-    height: 100%;
-    color: #616b76;
-    font-family: 'Roboto Condensed';
     background-color: #e0e5e8;
+    color: #616b76;
+    height: 100%;
+    font-size: 16pt;
+    font-family: 'Roboto Condensed';
     padding: 0;
     margin: 0;
-    font-size: 16pt;
 }
 
 /* Top Bar */
@@ -30,18 +30,18 @@ body {
 }
 
 .header__text {
-    padding: 1em 2em 0;
     color: white;
+    padding: 1em 2em 0;
 }
 
 /* Menu */
 .menu {
     background-color: #64308e;
     color: white;
-    position: absolute;
-    top: 0;
     right: 0;
+    top: 0;
     padding: 0.8em;
+    position: absolute;
 }
 .menu a {
     color: white;
@@ -62,11 +62,11 @@ body {
 }
 
 .menu.menu--active {
-        -moz-box-shadow: -1px 1px 1px #444;
-        -webkit-box-shadow: -1px 1px 1px #444;
-        box-shadow: -1px 1px 1px #444;
-        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444')";
-        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444');
+    -moz-box-shadow: -1px 1px 1px #444;
+    -webkit-box-shadow: -1px 1px 1px #444;
+    box-shadow: -1px 1px 1px #444;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444');
 
 }
 
@@ -87,21 +87,23 @@ body {
 /* Sign Up Form */
 
 .sign-up-form {
+    background-color: #ebeef0;
+    overflow: auto;
     padding: 2em;
 }
 
 .sign-up-form input {
-    width: 100%;
     padding: .6em;
     margin: 0 0 .3em;
+    width: 100%;
 }
 
 .sign-up-form__actions button {
     background-color: #64308e;
+    border: 0;
     color: white;
     border-radius: 4px;
     padding: .8em;
-    border: 0;
 }
 
 .sign-up-form__actions div {
@@ -110,14 +112,14 @@ body {
 }
 
 .sign-up-form__actions a {
-    text-decoration: none;
     color: #afbdc5; /* darkest */
+    text-decoration: none;
 }
 
 /* Colophon */
 
 .colophon {
-    position: absolute;
-    left: 2em;
     bottom: 30px;
+    left: 2em;
+    position: absolute;
 }
