@@ -10,6 +10,7 @@
 // light  #eceff1
 // lighter #ebeef0
 
+// red #ea202c
 */
 
 body {
@@ -32,6 +33,25 @@ body {
 .header__text {
     color: white;
     padding: 1em 2em 0;
+}
+
+/* Flash Message */
+.flash {
+    padding: 1em 2em;;
+    font-size: .7em;
+    text-align: center;
+
+    -moz-box-shadow: 0px 2px 1px #444;
+    -webkit-box-shadow: 0px 2px 1px #444;
+    box-shadow: 0px 2px 1px #444;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444')";
+    filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=270, Color='#444444');
+
+}
+
+.flash__error {
+    color: white;
+    background-color: #ea202c;
 }
 
 /* Menu */
@@ -94,9 +114,15 @@ body {
 }
 
 .sign-up-form input {
-    padding: .6em;
+    border-radius: 3px;
+    border: 0;
     margin: 0 0 .3em;
+    padding: .6em;
     width: 100%;
+}
+
+.sign-up-form input.sign-up-form--error {
+    border: 2px solid #ea202c;
 }
 
 .sign-up-form__actions button {

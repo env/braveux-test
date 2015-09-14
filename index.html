@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta charset="UTF-8">
+
     <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,500' rel='stylesheet' type='text/css'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
@@ -18,7 +20,11 @@
        </div>
      </div>
 
-     <div class="menu menu--active">
+     <div class="flash flash__error">
+       Your username or password wasn’t recognized.
+     </div>
+
+     <div class="menu">
        <div class="menu__title">
          <a href="#">
            <span>Menu</span>
@@ -44,10 +50,10 @@
 
        <form>
          <div>
-           <input type="text" placeholder="Username" />
+           <input class="sign-up-form--error" type="text" placeholder="Username"/>
          </div>
          <div>
-           <input type="password" placeholder="Password" />
+           <input class="sign-up-form--error" type="password" placeholder="Password" />
          </div>
        </form>
 
