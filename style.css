@@ -1,22 +1,28 @@
+/*
 // purples
-//// light #912c8c
-//// dark  #64308e
+// light #912c8c
+// dark  #64308e
 
 // greys
-//// dark   #afbdc5
-//// med    #e0e5e8
-//// light  #eceff1
+// darkest #616b76
+// dark   #afbdc5
+// med    #e0e5e8
+// light  #eceff1
+
+*/
 
 
-/* Top Bar */
-
-html, body {
-    height: 100vh;
+body {
+    height: 100%;
+    color: #616b76;
     font-family: 'Roboto Condensed';
-    background-color: white;
+    background-color: #e0e5e8;
     padding: 0;
     margin: 0;
+    font-size: 16pt;
 }
+
+/* Top Bar */
 
 .header {
     background-color: #912c8c;
@@ -24,8 +30,7 @@ html, body {
 }
 
 .header__text {
-    padding: 20px 0;
-    margin: 0 20px 0;
+    padding: 1em 2em 0;
     color: white;
 }
 
@@ -36,12 +41,28 @@ html, body {
     position: absolute;
     top: 0;
     right: 0;
-    padding: 20px
+    padding: 1.4em;}
+
+.menu .menu__nav ul{
+    display: none;
 }
 
 .menu--active {
-    height: 100vh;
     width: 60%;
+    height: 100%;
+}
+
+.menu.menu--active {
+        -moz-box-shadow: -1px 1px 1px #444;
+        -webkit-box-shadow: -1px 1px 1px #444;
+        box-shadow: -1px 1px 1px #444;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444')";
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#444444');
+
+}
+
+.menu.menu--active .menu__nav ul {
+    display: block
 }
 
 .menu__nav ul {
@@ -52,9 +73,38 @@ html, body {
 .menu__nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 1em 0;
     display: block;
 }
 
+/* Sign Up Form */
 
-/* Main */
+.sign-up-form {
+    padding: 3em;
+}
+
+.sign-up-form input {
+    width: 100%;
+    padding: 10px;
+}
+
+.sign-up-form__actions button {
+    background-color: #64308e;
+    color: white;
+    border-radius: 2px;
+    padding: .8em;;
+    border: 0;
+}
+
+.sign-up-form__actions div {
+    width: 50%;
+    float: left;
+}
+
+/* Colophon */
+
+.colophon {
+    position: absolute;
+    left: 5px;
+    bottom: 30px;
+}
