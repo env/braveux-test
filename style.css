@@ -1,0 +1,60 @@
+// purples
+//// light #912c8c
+//// dark  #64308e
+
+// greys
+//// dark   #afbdc5
+//// med    #e0e5e8
+//// light  #eceff1
+
+
+/* Top Bar */
+
+html, body {
+    height: 100vh;
+    font-family: 'Roboto Condensed';
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background-color: #912c8c;
+    height: 10vh;
+}
+
+.header__text {
+    padding: 20px 0;
+    margin: 0 20px 0;
+    color: white;
+}
+
+/* Menu */
+.menu {
+    background-color: #64308e;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px
+}
+
+.menu--active {
+    height: 100vh;
+    width: 60%;
+}
+
+.menu__nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+.menu__nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+}
+
+
+/* Main */
